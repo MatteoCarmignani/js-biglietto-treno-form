@@ -1,5 +1,8 @@
     
     const calcolo = document.getElementById('calcolo')
+    const annulla = document.getElementById('annulla')
+
+    //FUNZIONE PER CANCELLARE
     
     calcolo.addEventListener('click', function() {
     
@@ -20,4 +23,10 @@
     risultato.textContent = 'Il risultato è: ' + prezzoBase.toFixed(2) + '€';
 });
 
-    
+// FUNZIONE PER ANNULLARE
+
+  annulla.addEventListener('click', function() {
+  document.getElementById("km").value = "";
+  document.getElementById("eta").value = "";
+
+});  
